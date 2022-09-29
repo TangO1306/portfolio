@@ -1,0 +1,89 @@
+@import 'utils/variables';
+
+.title{
+    margin: 0;
+    line-height: $lineheightTitle;
+    font-family: "Neue Montreal", serif;
+    
+    &--small{
+        
+    }
+
+    &--medium{
+        
+    }
+
+    &--large{
+        
+    }
+
+    &--extralarge{
+        
+    }
+}
+
+.title{
+    &--small{
+        font-size: $smMobile;
+    }
+
+    &--medium{
+        font-size: $mdMobile;
+    }
+
+    &--large{
+        font-size: $lgMobile;
+    }
+
+    &--extralarge{
+        font-size: $xlMobile;
+    }
+}
+
+@media(min-width: 650px){
+    body, button{
+        font-size: $fontsizeTablet;
+    }
+
+    .title{
+        &--small{
+            font-size: $smTablet;
+        }
+
+        &--medium{
+            font-size: $mdTablet;
+        }
+
+        &--large{
+            font-size: $lgTablet;
+        }
+
+        &--extralarge{
+            font-size: $xlTablet;
+        }
+    }
+}
+
+@media(min-width: 1300px){
+    body, button{
+        font-size: $fontsizeDesktop;
+    }
+
+    .title{
+        &--small{
+            font-size: $smDesktop;
+        }
+
+        &--medium{
+            font-size: $mdDesktop;
+        }
+
+        &--large{
+            font-size: $lgDesktop;
+        }
+
+        &--extralarge{
+            font-size: $xlDesktop;
+        }
+    }
+}

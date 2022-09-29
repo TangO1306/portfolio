@@ -1,0 +1,29 @@
+$white: #FFF;
+$black: #000;
+$yellow: #F7B538;
+$darkgrey: #7A7A7A;
+
+$lineheightTitle: 1;
+$lineheightContent: 1.5;
+$fontsizeImage: 1.4rem;
+
+$rapportHierarchique: 1.333;
+
+$fontsizeMobile: 1.6rem;
+$fontsizeTablet: 1.7rem;
+$fontsizeDesktop: 1.8rem;
+
+$smMobile: $fontsizeMobile * $rapportHierarchique;
+$mdMobile: $fontsizeMobile * $rapportHierarchique * $rapportHierarchique;
+$lgMobile: $fontsizeMobile * $rapportHierarchique * $rapportHierarchique * $rapportHierarchique;
+$xlMobile: $fontsizeMobile * $rapportHierarchique * $rapportHierarchique * $rapportHierarchique * $rapportHierarchique;
+
+$smTablet: $fontsizeTablet * $rapportHierarchique;
+$mdTablet: $fontsizeTablet * $rapportHierarchique * $rapportHierarchique;
+$lgTablet: $fontsizeTablet * $rapportHierarchique * $rapportHierarchique * $rapportHierarchique;
+$xlTablet: $fontsizeTablet * $rapportHierarchique * $rapportHierarchique * $rapportHierarchique * $rapportHierarchique;
+
+$smDesktop: $fontsizeDesktop * $rapportHierarchique;
+$mdDesktop: $fontsizeDesktop * $rapportHierarchique * $rapportHierarchique;
+$lgDesktop: $fontsizeDesktop * $rapportHierarchique * $rapportHierarchique * $rapportHierarchique;
+$xlDesktop: $fontsizeDesktop * $rapportHierarchique * $rapportHierarchique * $rapportHierarchique * $rapportHierarchique;
