@@ -23,5 +23,10 @@
     "sass": "^1.24.4",
     "sass-loader": "^8.0.1",
     "vue-template-compiler": "^2.6.11"
+  },
+  "dependencies": {
+    "gsap": "^3.11.2",
+    "swiper": "^8.4.3",
+    "swiper.js": "^1.0.0"
   }
 }

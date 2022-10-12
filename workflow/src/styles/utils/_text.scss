@@ -3,8 +3,14 @@
 .title{
     margin: 0;
     line-height: $lineheightTitle;
+    text-transform: uppercase;
     font-family: "Neue Montreal", serif;
+    font-weight: 500;
     
+    &--extrasmall{
+        
+    }
+
     &--small{
         
     }
@@ -23,6 +29,11 @@
 }
 
 .title{
+
+    &--extrasmall{
+        font-size: $xsMobile;
+    }
+
     &--small{
         font-size: $smMobile;
     }
@@ -46,6 +57,10 @@
     }
 
     .title{
+        &--extrasmall{
+            font-size: $xsTablet;
+        }
+
         &--small{
             font-size: $smTablet;
         }
@@ -70,6 +85,10 @@
     }
 
     .title{
+        &--extrasmall{
+            font-size: $xsDesktop;
+        }
+
         &--small{
             font-size: $smDesktop;
         }

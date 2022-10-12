@@ -26,13 +26,112 @@
     <meta name="twitter:image" content="http://tanguy-hellin.be/projets/nomDuProjet/assets/images/logo.jpg">
 	</head>
 	<body>
-		<header>
-
+		<header class="header">
+        <div class="menu">
+          <a class="logo" href="index.html">Logo</a>
+          <button class="btn btn--menu"><span></span></button>
+        </div>
+        <div class="menu__burger">
+          <div class="container">
+            <div class="menu__main">
+              <div class="last">
+                <small>Mon dernier projet</small>
+                <img src="assets/images/menu.jpg" alt="menu">
+              </div>
+              <h1 class="title title--medium author">
+                <div class="author__firstname">Tanguy</div>
+                <div class="author__lastname">Hellin</div>
+                <div class="author__tasks">
+                  <ul class="list list__tasks">
+                    <li class="tasks__element">Web Design</li>
+                    <li class="tasks__element">UI/UX Design</li>
+                    <li class="tasks__element">Photography</li>
+                    <li class="tasks__element">Video Edit</li>
+                    <li class="tasks__element">Web Design</li>
+                  </ul>
+                </div>
+              </h1>
+              <nav class="nav">
+                <ul class="list nav__list">
+                  <li class="nav__element"><a class="nav__element--link nav__element--actif" href="index.html"><span data-hover="Home">Home</span></a></li>
+                  <li class="nav__element"><a class="nav__element--link" href="works.html"><span data-hover="Works">Works</span></a></li>
+                  <li class="nav__element"><a class="nav__element--link" href="about.html"><span data-hover="About">About</span></a></li>
+                  <li class="nav__element"><a class="nav__element--link" href="contact.html"><span data-hover="Contact">Contact</span></a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="menu__more">
+              <p>©2022</p>
+              <ul class="list list__media">
+                <li><a href="mailto:hellintanguy@gmail.com">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/tanguy-hellin-2763b521a/">Linkedin</a></li>
+                <li><a href="https://www.instagram.com/tanguy_hellin/?hl=fr">Instagram</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
 		</header>
 		<main>
-      <section class="section section--jaune">
+      <div class="cursors">
+        <div class="cursor cursor--open">Open</div>
+        <div class="cursor cursor--drag">Drag</div>
+        <div class="cursor cursor--email">Email</div>
+      </div>
+      <section class="section section--swiper">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <small>TFE</small>
+                <h3 class="title title--medium">Roover</h3>
+                <div class="parallax parallax--work open"></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <small>TFE</small>
+                <h3 class="title title--medium">Roover</h3>
+                <div class="parallax parallax--work open"></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <small>TFE</small>
+                <h3 class="title title--medium">Roover</h3>
+                <div class="parallax parallax--work open"></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <small>TFE</small>
+                <h3 class="title title--medium">Roover</h3>
+                <div class="parallax parallax--work open"></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <small>TFE</small>
+                <h3 class="title title--medium">Roover</h3>
+                <div class="parallax parallax--work open"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--about">
         <div class="container">
-          <h1>Titre</h1>
+        </div>
+      </section>
+      <section class="section section--jaune">
+        <div class="lines">
+          <div class="line line--1"></div>
+          <div class="line line--2"></div>
+          <div class="line line--3"></div>
+        </div>
+        <div class="container">
+          <h1 class="title title--large">Titre</h1>
+          <div class="parallax parallax--flo"></div>
+          <div class="parallax parallax--about"></div>
         </div>
       </section>
 		</main>
@@ -59,8 +158,8 @@
           </div>
         </div>
         <div class="footer__bottom">
-          <small class="copyright">Tanguy Hellin ©2022</small>
-          <ul class="list footer__media">
+          <small class="copyright">Made by <span>Tanguy Hellin ©2022</span></small>
+          <ul class="list list__media">
             <li><a href="mailto:hellintanguy@gmail.com">Email</a></li>
             <li><a href="https://www.linkedin.com/in/tanguy-hellin-2763b521a/">Linkedin</a></li>
             <li><a href="https://www.instagram.com/tanguy_hellin/?hl=fr">Instagram</a></li>
