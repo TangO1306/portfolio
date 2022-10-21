@@ -27,83 +27,120 @@
 	</head>
 	<body>
 		<header class="header">
-      <div class="container">
-        <a class="nav__logo" href="index.html">Logo</a>
-        <nav class="nav">
-          <ul class="list nav__list">
-            <li class="nav__element"><a href="index.html">Home</a></li>
-            <li class="nav__element"><a href="works.html">Works</a></li>
-            <li class="nav__element"><a href="about.html">About</a></li>
-            <li class="nav__element"><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
+      <div class="menu">
+        <a class="menu__logo" href="index.html">Logo</a>
+        <div class="menu__page">Contact</div>
+        <div class="menu__btn">
+          <button class="btn btn--menu"><span></span></button>
+        </div>
       </div>
-		</header>
-		<main>
-            <div class="cursors">
-                <div class="cursor cursor--open">Open</div>
-                <div class="cursor cursor--drag">Drag</div>
-                <div class="cursor cursor--email">Email</div>
+      <div class="menu__burger">
+        <div class="container">
+          <div class="menu__main">
+            <div class="last">
+              <small>Mon dernier projet</small>
+              <a class="open" href="#">
+                <img src="assets/images/menu.jpg" alt="menu">
+              </a>
             </div>
-            <section class="section section--info">
-              <div class="lines">
-                <div class="line line--1"></div>
-                <div class="line line--2"></div>
-                <div class="line line--3"></div>
+            <h1 class="title title--medium author">
+              <div class="author__firstname">Tanguy</div>
+              <div class="author__lastname">Hellin</div>
+              <div class="author__tasks">
+                <ul class="list list__tasks">
+                  <li class="tasks__element">Web Design</li>
+                  <li class="tasks__element">Photography</li>
+                  <li class="tasks__element">UI/UX Design</li>
+                  <li class="tasks__element">Video Edit</li>
+                  <li class="tasks__element">Web Design</li>
+                </ul>
               </div>
-              <div class="container">
-                <h1 class="title title--extralarge">Contact</h1>
+            </h1>
+            <nav class="nav">
+              <ul class="list nav__list">
+                <li class="nav__element"><a class="nav__element--link nav__element--actif" href="index.html">Home</a></li>
+                <li class="nav__element"><a class="nav__element--link" href="works.html">Works</a></li>
+                <li class="nav__element"><a class="nav__element--link" href="about.html">About</a></li>
+                <li class="nav__element"><a class="nav__element--link" href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="menu__more">
+            <p>©2022</p>
+            <ul class="list list__media">
+              <li><a href="mailto:hellintanguy@gmail.com">Email</a></li>
+              <li><a href="https://www.linkedin.com/in/tanguy-hellin-2763b521a/">Linkedin</a></li>
+              <li><a href="https://www.instagram.com/tanguy_hellin/?hl=fr">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="cursors">
+        <div class="cursor cursor--drag">Drag</div>
+        <div class="cursor cursor--open">Open</div>
+        <div class="cursor cursor--email">Email</div>
+      </div>
+      <section class="section section--info">
+        <div class="lines">
+          <div class="line line--dark line--1"></div>
+          <div class="line line--dark line--2"></div>
+          <div class="line line--dark line--3"></div>
+        </div>
+        <div class="container">
+          <h1 class="title title--extralarge">Contact</h1>
+        </div>
+      </section>
+      <section class="section section--contact">
+          <div class="lines">
+              <div class="line line--1"></div>
+              <div class="line line--2"></div>
+              <div class="line line--3"></div>
+          </div>
+          <div class="container">
+          <h2 class="title title--large"><span class="background">Contact</span></h2>
+          <p><span class="background">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus magnam accusantium odio recusandae voluptas fuga voluptates, at deserunt ab quod aspernatur vel debitis aut rerum iusto accusamus dicta, consectetur est?</span></p>
+          <form class="form" method="post">
+              <div class="background">
+                <div class="form__identity">
+                  <div class="form__field">
+                      <input class="form__input" type="text" placeholder="Nom" name="nom" required>
+                  </div>
+                  <div class="form__field">
+                      <input class="form__input" type="email" placeholder="Email" name="email" required>
+                  </div>
               </div>
-            </section>
-            <section class="section section--contact">
-                <div class="lines">
-                    <div class="line line--1"></div>
-                    <div class="line line--2"></div>
-                    <div class="line line--3"></div>
-                </div>
-                <div class="container">
-                <h2 class="title title--large"><span class="background">Contact</span></h2>
-                <p><span class="background">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus magnam accusantium odio recusandae voluptas fuga voluptates, at deserunt ab quod aspernatur vel debitis aut rerum iusto accusamus dicta, consectetur est?</span></p>
-                <form class="form" method="post">
-                    <div class="background">
-                      <div class="form__identity">
-                        <div class="form__field">
-                            <input class="form__input" type="text" placeholder="Nom" name="nom" required>
-                        </div>
-                        <div class="form__field">
-                            <input class="form__input" type="email" placeholder="Email" name="email" required>
-                        </div>
-                    </div>
-                    <div class="form__field">
-                        <input class="form__input" type="text" placeholder="Sujet" name="sujet" required>
-                    </div>
-                    <div class="form__field">
-                        <textarea class="form__input" placeholder="Écrivez votre message" row="10" name="message" required></textarea>
-                    </div>
-                    <button class="btn btn--contact" type="submit">Envoyer 
-                        <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 18" style="enable-background:new 0 0 24 18;" xml:space="preserve">
-                        <style type="text/css">
-                            .st0{fill:#FFFFFF;}
-                        </style>
-                        <path class="st0" d="M23.5,9.7l-7.1,7.1c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4l5.4-5.4H1.2c-0.6,0-1-0.4-1-1h0
-                            c0-0.6,0.4-1,1-1h19.2L15,2.6c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0l7.1,7.1C23.9,8.7,23.9,9.3,23.5,9.7L23.5,9.7z"/>
-                        </svg>
-                    </button>
-                    </div>
-                </form>
-                <div class="parallax parallax--contact"></div>
-                </div>
-            </section>
-            <section class="section section--email">
-                <div class="lines">
-                    <div class="line line--1"></div>
-                    <div class="line line--2"></div>
-                    <div class="line line--3"></div>
-                </div>
-                <div class="container">
-                    <h2 class="title title--extralarge">Vous préférez les <span class="eiko">emails</span> ?</h2>
-                </div>
-            </section>
+              <div class="form__field">
+                  <input class="form__input" type="text" placeholder="Sujet" name="sujet" required>
+              </div>
+              <div class="form__field">
+                  <textarea class="form__input" placeholder="Écrivez votre message" row="10" name="message" required></textarea>
+              </div>
+              <button class="btn btn--contact" type="submit">Envoyer 
+                  <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 18" style="enable-background:new 0 0 24 18;" xml:space="preserve">
+                  <style type="text/css">
+                      .st0{fill:#FFFFFF;}
+                  </style>
+                  <path class="st0" d="M23.5,9.7l-7.1,7.1c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4l5.4-5.4H1.2c-0.6,0-1-0.4-1-1h0
+                      c0-0.6,0.4-1,1-1h19.2L15,2.6c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0l7.1,7.1C23.9,8.7,23.9,9.3,23.5,9.7L23.5,9.7z"/>
+                  </svg>
+              </button>
+              </div>
+          </form>
+          <div class="parallax parallax--contact"></div>
+          </div>
+      </section>
+      <section class="section section--question">
+          <div class="lines">
+              <div class="line line--1"></div>
+              <div class="line line--2"></div>
+              <div class="line line--3"></div>
+          </div>
+          <div class="container">
+              <h2 class="title title--extralarge email"><a class="link" href="mailto:hellintanguy@gmail.com"><span class="background">Vous préférez les <span class="eiko">emails</span> ?</span></a></h2>
+          </div>
+      </section>
 		</main>
 		<footer class="footer">
       <div class="container">

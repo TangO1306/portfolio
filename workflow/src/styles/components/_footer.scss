@@ -75,7 +75,7 @@
                 background-color: $yellow;
                 transform: scale(0, 0);
                 transform-origin: center;
-                transition: transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+                transition: transform .8s $easeOutExpo;
             }
 
             &:hover {
@@ -125,13 +125,9 @@
 
 .copyright{
     grid-column: 1 / 4;
-    color: $darkgrey;
+    color: $white;
+    text-transform: uppercase;
     font-size: $fontsizeSmall;
     margin: auto 0;
-
-    span{
-        color: $white;
-        text-transform: uppercase;
-    }
 }
 

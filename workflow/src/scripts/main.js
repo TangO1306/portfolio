@@ -1,10 +1,23 @@
+import Swiper from 'swiper';
+import 'swiper/swiper-bundle.css';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-import Swiper from 'swiper';
-import 'swiper/swiper-bundle.css';
+// Remove anchor
+
+const url = document.querySelector(".anchor");
+
+if(url){
+    url.addEventListener("click", removeAnchor);
+}
+
+function removeAnchor() {
+    setTimeout(() => {
+        history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
+    }, 5);
+}
 
 // Burger menu
 
@@ -14,9 +27,12 @@ function toggleNavigation(){
     if(document.body.hasAttribute("data-menu")){
         document.body.removeAttribute("data-menu");
         menuButton.classList.remove("open");
+        burger.timeScale(1.5);
+        burger.reverse();
     }else{
         document.body.setAttribute("data-menu", true);
         menuButton.classList.add("open");
+        burger.play().timeScale(1);
     }
 }
 
@@ -24,7 +40,7 @@ function toggleNavigation(){
 
 const mainMenu = document.querySelector(".menu__main");
 const moreMenu = document.querySelector(".menu__more");
-mainMenu.addEventListener("resize", menuHeight);
+window.addEventListener("resize", menuHeight);
 
 function menuHeight(){
   moreMenu.style.height = (mainMenu.offsetHeight + 24) + "px";
@@ -34,7 +50,7 @@ menuHeight();
 
 // Nav
 
-/*let header = document.querySelector(".header");
+let header = document.querySelector(".header");
 
 document.addEventListener("scroll", () => {
   if(document.documentElement.scrollTop > 900){
@@ -42,28 +58,51 @@ document.addEventListener("scroll", () => {
   }else{
     header.classList.remove("header--bg");
   }
-});*/
+});
 
 // Copyright
 
 let annee = (new Date).getFullYear(),
 date = document.querySelector(".copyright span");
-date.innerHTML = "Tanguy Hellin ©"+annee;
+date.innerHTML = "©"+annee;
 
 // Parallax
 
-gsap.fromTo(".parallax", { 
-    backgroundPosition: "50% 0%"
+let parallaxs = document.querySelectorAll(".parallax");
+
+parallaxs.forEach( parallax => {
+  gsap.fromTo(parallax, {
+    backgroundPosition: "50% 100%"
   },
   {
-    backgroundPosition: "50% 100%",
-    ease: "none",
     scrollTrigger: {
-      trigger: ".parallax",
+      trigger: parallax,
       start: "top bottom",
-      scrub: true
-  }
-});
+      scrub: .2,
+    },
+    backgroundPosition: "50% 0%",
+    ease: "none"
+  });
+})
+
+// Lines
+
+let lines = document.querySelectorAll(".line");
+
+lines.forEach( line => {
+  gsap.fromTo(line, {
+    height: "0%",
+  },
+  {
+    scrollTrigger: {
+      trigger: line,
+      start: "top 50%",
+    },
+    height: "100%",
+    duration: .8,
+    ease: "none"
+  });
+})
 
 // Cursor
 
@@ -72,7 +111,7 @@ const open = document.querySelectorAll(".open");
 const cursorDrag = document.querySelector(".cursor--drag");
 const drag = document.querySelectorAll(".drag");
 const cursorEmail = document.querySelector(".cursor--email");
-const email = document.querySelectorAll(".title--extralarge");
+const email = document.querySelectorAll(".email");
 
 window.addEventListener("mousemove", (e) => {
   let y = e.pageY;
@@ -124,24 +163,7 @@ const swiper = new Swiper(".swiper", {
 
 // Anim burger
 
-/*const burger = gsap.timeline()
-
-burger.to('.menu-link', {
-  yPercent:100,
-  duration: 0.5,
-})
-
-burger.to('.menu-overlay', {
-  width: 0
-}).progress(1)
-
-
-
-menuButton.addEventListener('click', () => {
-  burger.reversed(!burger.reversed());
-})*/
-
-const burger = gsap.timeline();
+const burger = gsap.timeline({ paused: true });
 
 burger.set(".menu__more, .menu__main", {
   y: "-100%",
@@ -150,17 +172,13 @@ burger.set(".menu__more, .menu__main", {
 
 burger.to(".menu__more", {
   y: "0",
-  duration: 1
+  duration: .6
 })
 
 burger.to(".menu__main", {
-  yPercent: 0,
-  duration: 1,
-  delay: .3
-})
-
-menuButton.addEventListener("click", () => {
-  burger.play();
+  y: "0",
+  duration: .6,
+  delay: -.4
 })
 
 // Tasks
@@ -197,4 +215,78 @@ tasks.to(".tasks__element",{
   yPercent: -400,
   duration: .3,
   delay: .5
+})
+
+// Services
+
+gsap.to(".services:nth-child(1)", {
+  x: -100,
+  ease: "none",
+  scrollTrigger:{
+    trigger: ".section--services",
+    start: "top bottom",
+    scrub: true
+  }
+})
+
+gsap.to(".services:nth-child(2)", {
+  x: 300,
+  ease: "none",
+  scrollTrigger:{
+    trigger: ".section--services",
+    start: "top bottom",
+    scrub: true
+  }
+})
+
+gsap.to(".services:nth-child(3)", {
+  x: -500,
+  ease: "none",
+  scrollTrigger:{
+    trigger: ".section--services",
+    start: "top bottom",
+    scrub: true
+  }
+})
+
+gsap.to(".services:nth-child(4)", {
+  x: 700,
+  ease: "none",
+  scrollTrigger:{
+    trigger: ".section--services",
+    start: "top bottom",
+    scrub: true
+  }
+})
+
+// Title
+
+gsap.set(".hidden span", {
+  y: "100%",
+})
+
+gsap.to(".hidden span", {
+  ease: "expo.out",
+  y: "0%",
+  stagger: .2,
+  duration: 2.4,
+  delay: .8,
+  scrollTrigger: {
+    trigger:".hidden span",
+  }
+})
+
+// Fade background
+
+gsap.to(".intro", {
+  ease: "none",
+  opacity: 0,
+  scrollTrigger:{
+    trigger: ".intro",
+    scrub: true,
+    pin: true,
+    pinSpacing: false,
+    start: "top top",
+    end: "bottom 10%"
+  }
 })
