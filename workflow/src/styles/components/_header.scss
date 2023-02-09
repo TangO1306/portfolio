@@ -13,9 +13,16 @@
             padding: 12px 48px;
             animation: menu .8s $easeOutExpo;
 
+            &__logo{
+                svg{
+                    fill: $black;
+                }
+            }
+
             &__page{
                 display: flex;
                 align-items: center;
+                font-weight: 500;
             }
         }
 
@@ -67,6 +74,10 @@
         display: flex;
         align-items: center;
         z-index: 13;
+        
+        svg{
+            fill: $white;
+        }
     }
 
     &__page{
@@ -251,7 +262,8 @@
     &--menu{
         display: block;
         width: 32px;
-        height: 32px;
+        height: 48px;
+        padding-left: 16px;
         z-index: 13;
 
         span{
@@ -336,6 +348,12 @@ body[data-menu]{
     }
 
     .menu{
+        &__logo{
+            svg{
+                fill: $white;
+            }
+        }
+        
         &__burger{
             position: fixed;
         }
