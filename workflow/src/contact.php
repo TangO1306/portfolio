@@ -1,0 +1,217 @@
+<?php
+  $console = "";
+?>
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Contact — Tanguy Hellin</title>
+    <link rel="stylesheet" href="styles/main.css">
+		<script src="scripts/main.js" defer></script>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo.svg"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Méta Google -->
+    <meta name="title" content="Portfolio de Tanguy Hellin" />
+    <meta name="description" content="Portfolio de Tanguy Hellin, Web Designer diplomé à l'HEAJ, Bruxelles — Belgique" />
+    <!-- Métas Facebook Opengraph -->
+    <meta property="og:title" content="Portfolio de Tanguy Hellin" />
+    <meta property="og:site_name" content="tanguy-hellin.be">
+    <meta property="og:description" content="Portfolio de Tanguy Hellin, Web Designer diplomé à l'HEAJ, Bruxelles — Belgique" />
+    <meta property="og:url" content="http://tanguy-hellin.be/" />
+    <meta property="og:image" content="http://tanguy-hellin.be/projets/nomDuProjet/assets/images/menu.jpg" />
+    <meta property="og:type" content="website" />
+    <!-- Métas Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@tanguy-hellin.be">
+    <meta name="twitter:creator" content="@tanguy_hellin">
+    <meta name="twitter:title" content="Portfolio de Tanguy Hellin">
+    <meta name="twitter:description" content="Portfolio de Tanguy Hellin, Web Designer diplomé à l'HEAJ, Bruxelles — Belgique">
+    <meta name="twitter:image" content="http://tanguy-hellin.be/projets/nomDuProjet/assets/images/menu.jpg">
+	</head>
+	<body>
+		<header class="header">
+      <div class="menu">
+        <a class="menu__logo" href="index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.22 50" height="48">
+            <path d="M5.87 0v9.13h7.99V0h5.87v23.31h-5.87v-9.39H5.87v9.39H0V0h5.87ZM39.67 8.93v4.79H29.5v4.79h12v4.79H23.63V0H41.3v4.79H29.5v4.14h10.17ZM54.96 23.31V4.79H44.59V0h16.23v23.31h-5.87ZM5.87 26.69V45.2h22.62v4.79H0v-23.3h5.87ZM36.96 26.69V50h-5.87V26.69h5.87ZM40.88 26.69h5.87l8.15 13.85h.07V26.69h5.87V50h-5.87l-8.15-13.85h-.07V50h-5.87V26.69Z"/>
+            <path d="M64.88 50v-5.78c0-3.63 2.34-5.82 6.53-5.82s6.51 2.01 6.51 5.64v5.97H64.87Zm10.36-3.28v-2.1c0-2.04-1.46-2.86-3.83-2.86s-3.85.82-3.85 2.86v2.1h7.68ZM74.1 26.41c2.5 0 4.12 1.9 4.12 5.16s-1.73 5.99-4.73 5.99v-3.32c1.51 0 2.08-1.15 2.08-2.63 0-1.22-.49-1.84-1.17-1.84-1.11 0-1.4 1.3-1.95 3.1-.66 2.28-1.57 4.29-3.9 4.29-2.85 0-3.96-2.23-3.96-5.04 0-3.05 1.61-5.44 4.25-5.53v3.32c-1 .15-1.61.95-1.61 2.21 0 .99.33 1.68 1.08 1.68.88 0 1.17-.73 1.66-2.39.73-2.46 1.42-5 4.12-5ZM67.27 19.23c0 2.15 1.68 2.9 4.12 2.9s4.14-.75 4.14-3.03c0-1.51-.91-2.57-2.17-2.61v2.48h-2.37v-5.88h6.93v2.35l-1.66.33v.04c1.19.62 1.95 1.84 1.95 3.76 0 3.7-2.88 5.91-6.82 5.91s-6.81-2.21-6.81-6.31c0-3.58 2.12-5.57 4.62-5.88v3.36c-.89.24-1.93.77-1.93 2.57ZM64.88 11.17V7.89l7.76-4.56v-.04h-7.76V0h13.05v3.28l-7.75 4.56v.04h7.75v3.28H64.88Z"/>
+          </svg>
+        </a>
+        <div class="menu__page">Contact</div>
+        <div class="menu__btn">
+          <button class="btn btn--menu"><span></span></button>
+        </div>
+      </div>
+      <div class="menu__burger">
+        <div class="container">
+          <div class="menu__main">
+            <div class="last">
+              <small>Mon dernier projet</small>
+              <a class="open" href="http://tanguy-hellin.be/projets/alexpicture">
+                <img src="assets/images/alex.jpg" alt="dernier projet">
+              </a>
+            </div>
+            <h1 class="title title--medium author">
+              <div class="author__firstname">Tanguy</div>
+              <div class="author__lastname">Hellin</div>
+              <div class="author__tasks">
+                <ul class="list list__tasks">
+                  <li class="tasks__element">Web Design</li>
+                  <li class="tasks__element">Photos</li>
+                  <li class="tasks__element">UI/UX Design</li>
+                  <li class="tasks__element">Video Edit</li>
+                  <li class="tasks__element">Web Design</li>
+                </ul>
+              </div>
+            </h1>
+            <nav class="nav">
+              <ul class="list nav__list">
+                <li class="nav__element"><a class="nav__element--link" href="index.html">Home</a></li>
+                <li class="nav__element"><a class="nav__element--link" href="works.html">Works</a></li>
+                <li class="nav__element"><a class="nav__element--link nav__element--actif" href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="menu__more">
+            <p>©2022</p>
+            <ul class="list list__media">
+              <li><a href="mailto:hellintanguy@gmail.com">Email</a></li>
+              <li><a href="https://www.linkedin.com/in/tanguy-hellin-2763b521a/">Linkedin</a></li>
+              <li><a href="https://www.instagram.com/tanguy_hellin/?hl=fr">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="cursors">
+        <div class="cursor cursor--drag">Drag</div>
+        <div class="cursor cursor--open">Open</div>
+        <div class="cursor cursor--email">Email</div>
+      </div>
+      <!--<section class="section section--info">
+        <div class="lines">
+          <div class="line line--dark line--1"></div>
+          <div class="line line--dark line--2"></div>
+          <div class="line line--dark line--3"></div>
+        </div>
+        <div class="container">
+        </div>
+      </section>-->
+      <div class="intro intro--contact"></div>
+      <section class="section section--contact">
+          <div class="lines">
+              <div class="line line--1"></div>
+              <div class="line line--2"></div>
+              <div class="line line--3"></div>
+          </div>
+          <div class="container">
+          <h2 class="title title--large"><span class="background">Contact</span></h2>
+          <p><span class="background">Vous avez des questions, besoin d'un renseignement ou envie de collaborer avec moi pour votre projet ? N'hésitez pas à me contacter !</span></p>
+          <form class="form" method="post">
+              <div class="background">
+                <div class="form__identity">
+                  <div class="form__field">
+                      <input class="form__input" type="text" placeholder="Nom" value="<?php if(isset($_POST["nom"])) { echo $_POST["nom"]; }?>" name="nom" required>
+                  </div>
+                  <div class="form__field">
+                      <input class="form__input" type="email" placeholder="Email" value="<?php if(isset($_POST["email"])) { echo $_POST["email"]; }?>" name="email" required>
+                  </div>
+              </div>
+              <div class="form__field">
+                  <input class="form__input" type="text" placeholder="Sujet" value="<?php if(isset($_POST["sujet"])) { echo $_POST["sujet"]; }?>" name="sujet" required>
+              </div>
+              <div class="form__field">
+                  <textarea class="form__input" placeholder="Écrivez votre message" value="<?php if(isset($_POST["message"])) { echo $_POST["message"]; }?>" row="10" name="message" required></textarea>
+              </div>
+              <button class="btn btn--contact" type="submit">Envoyer 
+                  <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 18" style="enable-background:new 0 0 24 18;" xml:space="preserve">
+                  <style type="text/css">
+                      .st0{fill:#FFFFFF;}
+                  </style>
+                  <path class="st0" d="M23.5,9.7l-7.1,7.1c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4l5.4-5.4H1.2c-0.6,0-1-0.4-1-1h0
+                      c0-0.6,0.4-1,1-1h19.2L15,2.6c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0l7.1,7.1C23.9,8.7,23.9,9.3,23.5,9.7L23.5,9.7z"/>
+                  </svg>
+              </button>
+              <?php
+              if(!empty($console)){
+                echo "<p>$console</p>";
+              }
+              ?>
+              </div>
+          </form>
+          <?php
+          if(isset($_POST['submit'])){
+            if(!empty($_POST["nom"]) && !empty($_POST["email"]) && !empty($_POST["sujet"]) && !empty($_POST["message"])){
+            $nom = htmlspecialchars($_POST["nom"]);
+            $email = htmlspecialchars($_POST["email"]);
+            $sujet = htmlspecialchars($_POST["sujet"]);
+            $message = htmlspecialchars($_POST["message"]);
+            if(filter_var($email, FILTER_VALIDATE_EMAIL)){
+              $content = "Ce message vous a été envoyé via la page contact du site tanguy-hellin.be
+              Nom : " . $nom . "
+              Mail : " . $mail . "
+              Message : " . nl2br($message);
+              mail("hellintanguy@gmail.com", $sujet, $content, "From:contact@hellin.be\r\nReply-to:" . $email);
+              $console = "Votre message a bien été envoyé !";
+            }else{
+              $console = "Email non valide";
+            }
+            }else{
+              $console = "Tous les champs doivent être complétés";
+            }
+          }
+          ?>
+          <div class="parallax parallax--contact"></div>
+          </div>
+      </section>
+      <section class="section section--question">
+          <div class="lines">
+              <div class="line line--1"></div>
+              <div class="line line--2"></div>
+              <div class="line line--3"></div>
+          </div>
+          <div class="container">
+              <h2 class="title title--question email"><a class="link" href="mailto:hellintanguy@gmail.com"><span class="background">Vous préférez les <span class="eiko">emails</span> ?</span></a></h2>
+          </div>
+      </section>
+		</main>
+		<footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__top--left">
+            <a class="footer__logo" href="index.html">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.22 50" height="48" fill="#FFF">
+                <path d="M5.87 0v9.13h7.99V0h5.87v23.31h-5.87v-9.39H5.87v9.39H0V0h5.87ZM39.67 8.93v4.79H29.5v4.79h12v4.79H23.63V0H41.3v4.79H29.5v4.14h10.17ZM54.96 23.31V4.79H44.59V0h16.23v23.31h-5.87ZM5.87 26.69V45.2h22.62v4.79H0v-23.3h5.87ZM36.96 26.69V50h-5.87V26.69h5.87ZM40.88 26.69h5.87l8.15 13.85h.07V26.69h5.87V50h-5.87l-8.15-13.85h-.07V50h-5.87V26.69Z"/>
+                <path d="M64.88 50v-5.78c0-3.63 2.34-5.82 6.53-5.82s6.51 2.01 6.51 5.64v5.97H64.87Zm10.36-3.28v-2.1c0-2.04-1.46-2.86-3.83-2.86s-3.85.82-3.85 2.86v2.1h7.68ZM74.1 26.41c2.5 0 4.12 1.9 4.12 5.16s-1.73 5.99-4.73 5.99v-3.32c1.51 0 2.08-1.15 2.08-2.63 0-1.22-.49-1.84-1.17-1.84-1.11 0-1.4 1.3-1.95 3.1-.66 2.28-1.57 4.29-3.9 4.29-2.85 0-3.96-2.23-3.96-5.04 0-3.05 1.61-5.44 4.25-5.53v3.32c-1 .15-1.61.95-1.61 2.21 0 .99.33 1.68 1.08 1.68.88 0 1.17-.73 1.66-2.39.73-2.46 1.42-5 4.12-5ZM67.27 19.23c0 2.15 1.68 2.9 4.12 2.9s4.14-.75 4.14-3.03c0-1.51-.91-2.57-2.17-2.61v2.48h-2.37v-5.88h6.93v2.35l-1.66.33v.04c1.19.62 1.95 1.84 1.95 3.76 0 3.7-2.88 5.91-6.82 5.91s-6.81-2.21-6.81-6.31c0-3.58 2.12-5.57 4.62-5.88v3.36c-.89.24-1.93.77-1.93 2.57ZM64.88 11.17V7.89l7.76-4.56v-.04h-7.76V0h13.05v3.28l-7.75 4.56v.04h7.75v3.28H64.88Z"/>
+              </svg>
+            </a>
+            <ul class="list footer__info">
+              <li>hellintanguy@gmail.com</li>
+              <li>Brussels — Belgium</li>
+            </ul>
+          </div>
+          <div class="footer__top--center">
+            <ul class="list footer__nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="works.html">Works</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer__top--right">
+            <p>Jeune bruxellois de 21 ans, diplomé à la Haute Ecole Albert Jacquard en 2022, je vous accompagne dans la création de design et l'intégration de sites internet afin de rendre le web plus accessible et&nbsp;interactif.</p>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <small class="copyright">Tanguy Hellin <span>©2022</span></small>
+          <ul class="list footer__media">
+            <li><a href="mailto:hellintanguy@gmail.com">Email</a></li>
+            <li><a href="https://www.linkedin.com/in/tanguy-hellin-2763b521a/">Linkedin</a></li>
+            <li><a href="https://www.instagram.com/tanguy_hellin/?hl=fr">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+		</footer>
+	</body>
+</html>

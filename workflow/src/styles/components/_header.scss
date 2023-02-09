@@ -10,7 +10,7 @@
         position: fixed;
         .menu{
             background-color: $white;
-            padding: 12px 48px;
+            padding: 12px 24px;
             animation: menu .8s $easeOutExpo;
 
             &__logo{
@@ -39,7 +39,8 @@
 }
 
 .last{
-    grid-column: 1 / 3;
+    display: none;
+    grid-column: 1 / 6;
     margin-top: auto;
     padding-bottom: 48px;
 
@@ -65,9 +66,9 @@
 
 .menu{
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     column-gap: 24px;
-    padding: 24px 48px 0 48px;
+    padding: 24px 24px 0 24px;
 
     &__logo{
         grid-column: 1 / 2;
@@ -81,13 +82,13 @@
     }
 
     &__page{
-        grid-column: 2 / 9;
+        grid-column: 2 / 5;
         display: none;
         z-index: 13;
     }
 
     &__btn{
-        grid-column: 9 / 10;
+        grid-column: 5 / 6;
         display: flex;
         justify-content: flex-end;
     }
@@ -107,11 +108,11 @@
     &__main{
         position: absolute;
         display: grid;
-        grid-template-columns: repeat(9, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         column-gap: 24px;
         background-color: $black;
         padding-top: 96px;
-        margin: 0 48px;
+        margin: 0 24px;
         box-shadow: 0 0 12px $black;
         z-index: 12;
         transform: translateY(-105%);
@@ -122,17 +123,17 @@
         position: absolute;
         display: grid;
         background-color: $black;
-        grid-template-columns: repeat(9, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         column-gap: 24px;
-        padding: 24px 48px;
-        width: calc(100% - 96px);
+        padding: 24px;
+        width: calc(100% - 48px);
         box-shadow: 0 0 12px $black;
         z-index: 11;
         transform: translateY(-105%);
 
         p{
-            grid-column: 1 / 6;
-            display: flex;
+            grid-column: 1 / 2;
+            display: none;
             align-items: flex-end;
             font-size: $lgDesktop;
             font-weight: 500;
@@ -143,8 +144,9 @@
 
         .list{
             &__media{
-                grid-column: 6 / 10;
+                grid-column: 1 / 6;
                 display: flex;
+                justify-content: center;
                 align-items: flex-end;
                 gap: 48px;
         
@@ -192,12 +194,11 @@
 }
 
 .author{
-    grid-column: 3 / 6;
+    grid-column: 1 / 6;
     color: $lightgrey;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    border-right: 1px solid $darkgrey;
     padding-bottom: 48px;
 
     &__lastname{
@@ -207,13 +208,13 @@
 
     &__tasks{
         overflow: hidden;
-        height: $mdDesktop;
+        height: $mdMobile;
     }
 }
 
 .nav{
-    grid-column: 6 / 10;
-    padding-bottom: 192px;
+    grid-column: 1 / 6;
+    padding-bottom: 48px;
 
     &__list{
         counter-reset: li;
@@ -361,5 +362,119 @@ body[data-menu]{
         &__page{
             color: $white;
         }
+    }
+}
+
+@media(min-width: 650px){
+    .header{
+        &--bg{
+            .menu{
+                padding: 12px 48px;
+            }
+        }
+    }
+    
+    .menu{
+        grid-template-columns: repeat(7, 1fr);
+        padding: 24px 48px 0 48px;
+    
+        &__page{
+            grid-column: 2 / 7;
+        }
+    
+        &__btn{
+            grid-column: 7 / 8;
+        }
+
+        &__main{
+            grid-template-columns: repeat(7, 1fr);
+            margin: 0 48px;
+        }
+
+        &__more{
+            width: calc(100% - 96px);
+            padding: 24px 48px;
+            grid-template-columns: repeat(7, 1fr);
+
+            p{
+                grid-column: 1 / 4;
+            }
+
+            .list{
+                &__media{
+                    justify-content: flex-end;
+                    grid-column: 4 / 8;
+                }
+            }
+        }
+    }
+
+    .last{
+        display: block;
+        grid-column: 1 / 4;
+    }
+
+    .author{
+        border-right: 1px solid $darkgrey;
+        grid-column: 1 / 6;
+
+        &__tasks{
+            height: $mdTablet;
+        }
+    }
+
+    .nav{
+        padding-bottom: 96px;
+        grid-column: 6 / 8;
+    }
+}
+
+@media(min-width: 1300px){
+    .menu{
+        grid-template-columns: repeat(9, 1fr);
+
+        &__page{
+            grid-column: 2 / 9;
+        }
+    
+        &__btn{
+            grid-column: 9 / 10;
+        }
+
+        &__main{
+            grid-template-columns: repeat(9, 1fr);
+        }
+
+        &__more{
+            grid-template-columns: repeat(9, 1fr);
+
+            p{
+                grid-column: 1 / 6;
+            }
+
+            .list{
+                &__media{
+                    justify-content: flex-start;
+                    grid-column: 6 / 10;
+                }
+            }
+        }
+    }
+
+    .last{
+        grid-column: 1 / 3;
+    }
+
+    .author{
+        grid-column: 3 / 6;
+
+        &__tasks{
+            height: $mdDesktop;
+        }
+    }
+
+    .nav{
+        padding-bottom: 192px;
+        grid-column: 6 / 10;
     }
 }

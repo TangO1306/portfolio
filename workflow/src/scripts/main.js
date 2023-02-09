@@ -158,7 +158,15 @@ email.forEach(el => {
 const swiper = new Swiper(".swiper", {
   freeMode: true,
   grabCursor: true,
-  slidesPerView: 2.5
+  slidesPerView: 1,
+  breakpoints: {
+    650: {
+      slidesPerView: 1.5,
+    },
+    1300: {
+      slidesPerView: 2.5,
+    }
+  }
 });
 
 // Anim burger
@@ -220,7 +228,7 @@ tasks.to(".tasks__element",{
 // Services
 
 gsap.to(".services:nth-child(1)", {
-  x: -100,
+  x: "-10%",
   ease: "none",
   scrollTrigger:{
     trigger: ".section--services",
@@ -230,7 +238,7 @@ gsap.to(".services:nth-child(1)", {
 })
 
 gsap.to(".services:nth-child(2)", {
-  x: 300,
+  x: "5%",
   ease: "none",
   scrollTrigger:{
     trigger: ".section--services",
@@ -240,7 +248,7 @@ gsap.to(".services:nth-child(2)", {
 })
 
 gsap.to(".services:nth-child(3)", {
-  x: -500,
+  x: "-20%",
   ease: "none",
   scrollTrigger:{
     trigger: ".section--services",
@@ -250,7 +258,7 @@ gsap.to(".services:nth-child(3)", {
 })
 
 gsap.to(".services:nth-child(4)", {
-  x: 700,
+  x: "15%",
   ease: "none",
   scrollTrigger:{
     trigger: ".section--services",
@@ -278,11 +286,11 @@ gsap.to(".hidden span", {
 
 // Fade background
 
-gsap.to(".intro", {
+gsap.to(".intro--home", {
   ease: "none",
   opacity: 0,
   scrollTrigger:{
-    trigger: ".intro",
+    trigger: ".intro--home",
     scrub: true,
     pin: true,
     pinSpacing: false,

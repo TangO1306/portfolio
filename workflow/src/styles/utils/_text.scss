@@ -8,29 +8,6 @@
     font-weight: 500;
     
     &--extrasmall{
-        
-    }
-
-    &--small{
-        
-    }
-
-    &--medium{
-        
-    }
-
-    &--large{
-        margin-bottom: 96px;
-    }
-
-    &--extralarge{
-        
-    }
-}
-
-.title{
-
-    &--extrasmall{
         font-size: $xsMobile;
     }
 
@@ -43,11 +20,16 @@
     }
 
     &--large{
+        margin-bottom: 96px;
         font-size: $lgMobile;
     }
 
     &--extralarge{
         font-size: $xlMobile;
+    }
+
+    &--question{
+        font-size: $mdMobile;
     }
 }
 
@@ -76,6 +58,10 @@
         &--extralarge{
             font-size: $xlTablet;
         }
+
+        &--question{
+            font-size: $lgTablet;
+        }
     }
 }
 
@@ -102,6 +88,10 @@
         }
 
         &--extralarge{
+            font-size: $xlDesktop;
+        }
+
+        &--question{
             font-size: $xlDesktop;
         }
     }
